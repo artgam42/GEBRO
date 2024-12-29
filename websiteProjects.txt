@@ -1,0 +1,42 @@
+= SPEC-1 : Site Web de l'Entreprise Technologique :sectnums: :toc:
+
+== Contexte
+
+Ce projet de site web est destiné à une entreprise technologique qui offre des services de développement web, de graphisme, de photographie et de support informatique. Le site doit être simple et clair, permettant aux visiteurs de comprendre rapidement les services offerts et de contacter l'entreprise facilement.
+
+== Exigences
+
+== vous devez realiser vous mêmes la maquette graphique.
+
+Le site web doit comprendre les pages suivantes :
+
+Accueil : Présentation générale de l'entreprise.
+Services : Détail des services offerts.
+À propos : Information sur l'entreprise et son équipe.
+Contact : Formulaire de contact et informations de contact.
+Les exigences sont classées selon la méthode MoSCoW :
+
+Doit avoir :
+
+>Une page d'accueil avec un curriculum vitae des services.
+>Une page services détaillant chaque service offert.
+>Une page à proposer présentant l'entreprise et son équipe.
+>Une page contact avec un formulaire de contact fonctionnel.
+>Un menu de navigation présent sur toutes les pages.
+>Un pied de page avec des informations de copyright et des liens vers les pages principales.
+
+Devrait avoir :
+
+Un design responsive qui s'adapte aux appareils mobiles.
+Des fichiers CSS séparés pour le menu, le pied de page et le responsive.
+Pourrait avoir :
+
+Des animations simples pour améliorer l'expérience utilisateur.
+N'aura pas :
+
+Fonctionnalités JavaScript avancées ou des effets complexes.
+== Méthode
+
+La méthode de réalisation du site sera décrite en plusieurs étapes, chacune détaillant les composants nécessaires et les fichiers CSS associés.
+
+- Plizyè kategori pwodwi web developement, Graphisme

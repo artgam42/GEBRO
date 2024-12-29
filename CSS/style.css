@@ -1,0 +1,479 @@
+/* Font family */
+@font-face {
+    font-family: cocogoosel;
+    src: url(../font/Cocogoose-Light.ttf);
+}
+@font-face {
+    font-family: cocogooses;
+    src: url(../font/Cocogoose-Semilight.ttf);
+}
+@font-face {
+    font-family: cocogooser;
+    src: url(../font/Cocogoose-Regular.ttf);
+}
+@font-face {
+    font-family: corp;
+    src: url(../font/Corp-Bold.otf);
+}
+
+/* Color preset */
+:root{
+    --mauve: #390040;
+    --mauvepa:#730071;
+    --gris: #d7d1e0;
+    --blanc: #ffffff;
+}
+
+/* Class utilitaire */
+.titre{
+    padding-bottom: 30px;
+    font-size: 2rem;
+    font-family: corp;
+    color: var(--mauvepa);
+    text-align: center;
+}
+
+/* Default preset */
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 400;
+    /* max-width: 1200px; */
+}
+
+/* home */
+#home{
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    background: linear-gradient(rgba(115, 0, 113, 0.9), rgba(115, 0, 113, 0.9)), url('../img/technology.jpg') no-repeat center center;
+    background-size: cover;
+}
+#home .home_img{
+    text-align: center;
+    height: 100%;
+    width: 50%;
+}
+#home .home_info{
+    height: 100%;
+    width: 50%;
+}
+#home .home_info h1{
+    font-size: 4rem;
+    font-family: corp;
+    color: var(--blanc);
+}
+#home .home_info p{
+    font-size: 1.3rem;
+    font-family: cocogoosel;
+    letter-spacing: 0.12rem;
+    color: var(--blanc);
+}
+#home .home_info .home_link{
+    display: inline-flex;
+    margin-top: 20px;
+}
+#home .home_info .home_link li{
+    margin-right: 40px;
+    padding: 10px 25px;
+    background: var(--blanc);
+    border-radius: 30px;
+}
+#home .home_info .home_link li a{
+    font-size: 1.2rem;
+    font-family: cocogooses;
+    color: var(--mauve);
+    transition: all ease-in-out 0.5s;
+}
+#home .home_info .home_link li a:hover{
+    letter-spacing: 0.3rem;
+    color: var(--mauvepa);
+}
+
+/* services */
+#services{
+    margin: auto;
+    padding: 30px 50px;
+}
+#services .services_info{
+    display: flex;
+    position: relative;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+#services .services_info .services{
+    text-align: center;
+    padding: 60px 0;
+    margin: 20px 50px;
+    border: 1px var(--mauve) solid;
+    border-radius: 30px;
+    box-shadow: 2px 2px 0.5px 1px var(--mauve);
+    height: 300px;
+    width: 300px;
+}
+#services .services_info .services .services_text{
+    font-size: 1.5rem;
+    font-family: corp;
+    color: var(--mauve);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* propos */
+#propos{
+    margin: auto;
+    padding: 30px 100px;
+    background: var(--gris);
+}
+#propos .propos_group{
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+#propos .propos_group .propos{
+    display: flex;
+    margin-bottom: 30px;
+}
+#propos .propos_group .propos .propos_img{
+    width: 20%;
+    text-align: right
+}
+#propos .propos_group .propos .propos_text{
+    width: 80%;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+#propos .propos_group .propos .propos_text h3{
+    font-family: corp;
+    font-size: 1.25rem;
+    color: var(--mauvepa);
+}
+#propos .propos_group .propos .propos_text p{
+    font-family: cocogoosel;
+    font-size: 1rem;
+    color: var(--mauve);
+    text-align: justify;
+}
+
+/* proposss */
+#proposss{
+    margin: auto;
+    padding: 50px 100px;
+    background: linear-gradient(rgba(115, 0, 113, 0.9), rgba(115, 0, 113, 0.9)), url('../img/technology.jpg') no-repeat center center;
+    background-size: cover;
+}
+#proposss .proposss_group{
+    display: flex;
+}
+#proposss .proposss_group .proposss h2{
+    font-size: 1.8rem;
+    font-family: corp;
+    font-style: italic;
+    color: var(--blanc);
+    text-align: center;
+}
+#proposss .proposss_group .proposss p{
+    font-size: 4rem;
+    font-family: corp;
+    font-style: italic;
+    color: var(--gris);
+    text-align: center;
+}
+
+/* temoignage */
+#temoignage{
+    margin: auto;
+    padding: 30px 50px;
+}
+#temoignage .temoignage_group{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#temoignage .temoignage_group .temoignage{
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px 50px;
+    border: 1px var(--mauve) solid;
+    border-radius: 30px;
+    box-shadow: 1px 1px 0.5px 1px var(--mauve);
+    height: 400px;
+    width: 300px;
+}
+#temoignage .temoignage_group .temoignage img{
+    border-radius: 150px;
+    margin-top: 17px;
+}
+#temoignage .temoignage_group .temoignage .temoignage_name{
+    font-family: corp;
+    font-size: 1.25rem;
+    color: var(--mauvepa);
+    padding-top: 20px;
+}
+#temoignage .temoignage_group .temoignage .temoignage_text{
+    font-family: cocogoosel;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: var(--mauve);
+    padding-top: 10px;
+}
+
+/* home2 */
+#home2{
+    margin: auto;
+    padding: 60px;
+    display: flex;
+    background: linear-gradient(rgba(115, 0, 113, 0.9), rgba(115, 0, 113, 0.9)), url('../img/technology.jpg') no-repeat center center;
+    background-size: cover;
+}
+#home2 .home2_info h1{
+    font-size: 4rem;
+    font-family: corp;
+    color: var(--blanc);
+}
+
+/* services_liste */
+#liste{
+	padding: 30px;
+	justify-content: space-around;
+	background: var(--gris);
+}
+#liste #liste_ser{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	margin: 0;
+	padding-top: 0;
+}
+#liste #liste_ser li{
+    margin: 10px;
+	padding: 0 40px;
+}
+#liste #liste_ser li a{
+	font-family: cocogooses;
+	color: var(--mauve);
+	font-size: 1.2rem;
+}
+
+/* service */
+#service{
+    margin: 0;
+    padding: 30px 150px;
+}
+#service .service{
+    display: flex;
+    margin: 60px 60px;
+    padding: 0;
+}
+#service .service .info{
+    width: 50%;
+    padding: 0 50px;
+    /* margin-top: 0; */
+}
+#service .service .img{
+    width: 50%;
+    padding: 0 50px;
+}
+#service .service .info p{
+    text-align: justify;
+    font-family: cocogoosel;
+    font-size: 1rem;
+    color: var(--mauve);
+}
+#service .service .img img, #service .service .img video{
+    border-radius: 40px;
+    border: 1px var(--mauve) solid;
+    box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.5s all ease-in-out ;
+}
+#service .service .img img:hover, #service .service .img video:hover {
+    box-shadow: 6px 10px 5px rgba(0, 0, 0, 0.4);
+    width: 403px;
+}
+#service .service .info .ser_titre{
+    display: inline-flex;
+    margin-bottom: 30px;
+}
+#service .service .info .ser_titre h2{
+    margin-left: 20px;
+    font-size: 2rem;
+    font-family: corp;
+    color: var(--mauvepa);
+}
+#service .service .info .ser_titre img{
+    border-radius: 10px;
+    border: 2px var(--mauve) solid;
+    padding: 4px;
+}
+#service .service-line{
+    height: 3px;
+    width: 25rem;
+    margin: 0.5rem auto;
+    background: var(--mauve);
+    border-radius: 2px;
+}
+
+/* gebro */
+#gebro{
+    margin: auto;
+    padding: 40px 200px;
+    background: var(--gris);
+}
+#gebro .gebro_info{
+    font-family: cocogoosel;
+    color: var(--mauve);
+    text-align: justify;
+}
+#gebro .gebro_info p{
+    margin: 30px;
+    font-size: 1.2rem;
+}
+
+/* propos2 */
+#propos2{
+    margin: auto;
+    padding: 50px 100px;
+}
+#propos2 .propos_group .propos{
+    display: flex;
+    margin-bottom: 30px;
+}
+#propos2 .propos_group .propos .propos_img{
+    width: 20%;
+    text-align: right
+}
+#propos2 .propos_group .propos .propos_text{
+    width: 80%;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+#propos2 .propos_group .propos .propos_text h3{
+    font-family: corp;
+    font-size: 1.25rem;
+    color: var(--mauvepa);
+}
+#propos2 .propos_group .propos .propos_text p{
+    font-family: cocogoosel;
+    font-size: 1rem;
+    color: var(--mauve);
+    text-align: justify;
+}
+
+/* equipe */
+#equipe{
+    margin: auto;
+    padding: 60px 50px;
+    background: var(--mauve);
+}
+#equipe .titre{
+    padding-bottom: 30px;
+    font-size: 2rem;
+    font-family: corp;
+    color: var(--gris);
+    text-align: center;
+}
+#equipe .equipe_group{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#equipe .equipe_group .equipe{
+    text-align: center;
+    margin: 0 50px;
+}
+#equipe .equipe_group .equipe img{
+    margin-top: 17px;
+    border-radius: 30px;
+    background: var(--blanc);
+}
+#equipe .equipe_group .equipe .equipe_name{
+    font-family: corp;
+    font-size: 1.25rem;
+    color: var(--gris);
+    padding-top: 20px;
+}
+#equipe .equipe_group .equipe .equipe_text{
+    font-family: cocogoosel;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: var(--blanc);
+    padding-top: 10px;
+}
+#equipe .equipe-line{
+    height: 3px;
+    width: 25rem;
+    margin: 5rem auto;
+    margin-bottom: 0;
+    background: var(--gris);
+    border-radius: 2px;
+    justify-content: center;
+}
+
+/* contact */
+#contact {
+    padding: 80px 0;
+}
+#contact .contact_form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#contact .contact_form .info {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+#contact .contact_form .info .name, #contact .contact_form .info .email {
+    flex: 1;
+}
+#contact .contact_form label, #contact .contact_form .info label {
+    font-size: 1.2rem;
+    font-family: cocogooses;
+    color: var(--mauve);
+    margin: 20px 0;
+}
+#contact .contact_form .info input[type="text"], input[type="e-mail"], input[type="objet"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--gris);
+    font-family: cocogoosel;
+    border: 1px solid var(--mauve);
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+#contact .contact_form .info input[type="text"]:focus, input[type="e-mail"]:focus, input[type="objet"]:focus, textarea:focus {
+    border-color: var(--mauvepa);
+}
+#contact .contact_form input[type="submit"] {
+    background-color: var(--mauve);
+    color: var(--blanc);
+    border: none;
+    font-family: corp;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#contact .contact_form input[type="submit"]:hover {
+    background-color: var(--mauvepa);
+}
+#contact .contact_form textarea {
+    height: 200px;
+    resize: none;
+}

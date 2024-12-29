@@ -1,0 +1,33 @@
+/*menu*/
+#menu{
+	top: 0;
+	left: 0;
+	position: sticky;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	z-index: 1;
+	background: var(--blanc);
+}
+#menu #menu_link{
+	display: flex;
+	margin: 0;
+	padding-top: 0;
+}
+#menu #menu_link li{
+	margin: 5px;
+	padding: 0 35px;
+}
+#menu #menu_link li a{
+	font-family: cocogooses;
+	color: var(--mauve);
+	font-size: 1.2rem;
+	transition: all ease-in-out 0.5s;
+}
+#menu #menu_link li a:hover{
+	letter-spacing: 0.3rem;
+	color: var(--mauvepa);
+}
+#menu-mobile{
+	display: none;
+}

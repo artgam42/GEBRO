@@ -1,0 +1,129 @@
+
+/* Font family */
+@font-face {
+    font-family: cocogoosel;
+    src: url(../font/Cocogoose-Light.ttf);
+}
+@font-face {
+    font-family: cocogooses;
+    src: url(../font/Cocogoose-Semilight.ttf);
+}
+@font-face {
+    font-family: cocogooser;
+    src: url(../font/Cocogoose-Regular.ttf);
+}
+@font-face {
+    font-family: corp;
+    src: url(../font/Corp-Bold.otf);
+}
+
+/* Color preset */
+:root{
+    --mauve: #390040;
+    --mauvepa:#730071;
+    --gris: #d7d1e0;
+    --blanc: #ffffff;
+}
+
+/* Class utilitaire */
+.titre{
+    padding-bottom: 30px;
+    font-size: 2rem;
+    font-family: corp;
+    color: var(--mauvepa);
+    text-align: center;
+}
+
+/* Default preset */
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 400;
+    /* max-width: 1200px; */
+}
+
+#footer{
+    margin: auto;
+    padding: 30px 60px;
+    background: var(--mauve);
+    font-family: cocogoosel;
+    font-size: 1rem;
+    display: flex;
+    position: relative;
+	align-items: center;
+	justify-content: space-around;
+}
+#footer > div{
+    width: 30%;
+    margin: 15px;
+}
+#footer .info img{
+    margin-left: 40px;
+}
+#footer .info p{
+    text-align: justify;
+    color: var(--blanc);
+    margin: 20px 40px;
+}
+#footer h3{
+    font-family: corp;
+    font-size: 1.25rem;
+    color: var(--gris);
+    margin-left: 40px;
+    padding-left: 0;
+}
+#footer .services{
+    margin-left: 120px;
+}
+#footer .services ul{
+    margin: 20px 40px;
+}
+#footer .services ul li{
+    margin-bottom: 4px;
+}
+#footer .services ul a{
+    color: var(--blanc);
+}
+#footer .contact ul{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#footer .contact ul li{
+    color: var(--blanc);
+    font-family: corp;
+}
+#footer .contact p{
+    font-size: 0.8rem;
+    margin-top: 30px;
+    margin-left: 40px;
+    color: var(--gris);
+}
+#footer .contact .subscribe{
+    display: inline-flex;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#footer .contact .subscribe input{
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: cocogoosel;
+}
+#footer .contact .subscribe img{
+    border-radius: 30px;
+    color: var(--gris);
+}
+.copyright{
+    background: var(--mauve);
+    color: var(--gris);
+    font-family: cocogoosel;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.copyright span{
+    font-family: corp;
+}
